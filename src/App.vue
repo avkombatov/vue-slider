@@ -1,5 +1,6 @@
 <template>
   <app-slider-one :sliderItems="sliderItems" :interval="3000"></app-slider-one>
+  <app-slider-two></app-slider-two>
 </template>
 
 <script>
@@ -16,7 +17,7 @@ export default {
       ]
     }
   },
-  components: { AppSliderOne }
+  components: { AppSliderOne, AppSliderTwo }
 }
 </script>
 
