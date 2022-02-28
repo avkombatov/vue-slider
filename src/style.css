@@ -1,0 +1,36 @@
+.container-one{
+   margin: 0 auto;
+   /* display: flex; */
+   overflow: hidden;
+   max-width: 500px;
+}
+.slider-one{
+    display: flex;
+    transition: 0.5s;
+ 
+}
+.buttons-one{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.button-prev__one{
+    margin-right: 15px;
+}
+.button-prev__one,
+.button-next__one{
+    height: 35px;
+    width: 100px;
+    font-size: 19px;
+    background: #514A7E;
+    border: 0.5px solid #514A7E;
+    box-sizing: border-box;
+    color: #FFFDF5;
+    cursor: pointer;
+}
+
+.button-prev__one:hover,
+.button-next__one:hover{
+     background: #383261;
+     transition: 0.3s;
+}

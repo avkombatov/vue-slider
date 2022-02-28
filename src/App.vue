@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <app-slider-one :sliderItems="sliderItems" :interval="3000"></app-slider-one>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppSliderOne from './components/AppSliderOne/AppSliderOne.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  data () {
+    return {
+      sliderItems: [
+        { id: 1, name: 'img-1', img: 'img-1.jpg' },
+        { id: 2, name: 'img-2', img: 'img-2.jpg' },
+        { id: 3, name: 'img-3', img: 'img-3.jpg' },
+        { id: 4, name: 'img-4', img: 'img-4.jpg' },
+        { id: 5, name: 'img-5', img: 'img-5.jpg' }
+      ]
+    }
+  },
+  components: { AppSliderOne }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
