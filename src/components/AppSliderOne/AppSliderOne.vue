@@ -27,8 +27,10 @@ export default {
   },
   methods: {
     prevSlider () {
-      if (this.offset > 0) this.offset--
-      console.log(this.offset)
+      if (this.offset > 0) {
+        this.offset--
+      // console.log(this.offset)
+      }
     },
     nextSlider () {
       if (this.offset >= this.sliderItems.length - 1) {
@@ -37,7 +39,7 @@ export default {
         this.offset++
       }
 
-      console.log(this.offset)
+      // console.log(this.offset)
     }
 
   },
