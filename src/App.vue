@@ -1,9 +1,9 @@
 <template>
-<div class="center">
+
   <app-slider-one :sliderItems="sliderItems" :interval="3000"></app-slider-one>
   <hr />
   <app-slider-two :sliderItems="sliderItems"></app-slider-two>
-</div>
+
   
 </template>
 

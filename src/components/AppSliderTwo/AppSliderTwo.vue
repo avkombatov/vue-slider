@@ -1,5 +1,5 @@
 <template>
-  <div class="container-two">
+  <div class="container-two center">
     <div
       class="slider-two"
       :style="{ 'margin-left': '-' + 100 * offset + '%' }"

@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <img :src="require('../../assets/images/slider-1/' + item.img)" alt="" />
-  </div>
+
+    <img class="slider__img" :src="require('../../assets/images/slider-1/' + item.img)" alt="" />
+ 
 </template>
 
 <script>
