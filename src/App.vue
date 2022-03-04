@@ -1,8 +1,11 @@
 <template>
-
-  <app-slider-one :sliderItems="sliderItems" :interval="3000"></app-slider-one>
+<div class="container center">
+   <app-slider-three :sliderItems="sliderItems"></app-slider-three>
+</div>
+  <!-- <app-slider-one :sliderItems="sliderItems" :interval="3000"></app-slider-one>
   <hr />
-  <app-slider-two :sliderItems="sliderItems"></app-slider-two>
+  <app-slider-two :sliderItems="sliderItems"></app-slider-two> -->
+ 
 
   
 </template>
@@ -10,6 +13,7 @@
 <script>
 import AppSliderOne from "./components/AppSliderOne/AppSliderOne.vue";
 import AppSliderTwo from "./components/AppSliderTwo/AppSliderTwo.vue";
+import AppSliderThree from "./components/AppSliderThree/AppSliderThree.vue";
 export default {
   data() {
     return {
@@ -23,7 +27,7 @@ export default {
     };
   },
 
-  components: { AppSliderOne, AppSliderTwo },
+  components: { AppSliderOne, AppSliderTwo, AppSliderThree },
 };
 </script>
 
