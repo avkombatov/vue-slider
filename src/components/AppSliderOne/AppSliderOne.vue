@@ -43,14 +43,14 @@ export default {
     }
 
   },
-  mounted () {
-    if (this.interval > 0) {
-      const vm = this
-      setInterval(function () {
-        vm.nextSlider()
-      }, vm.interval)
-    }
-  },
+  // mounted () {
+  //   if (this.interval > 0) {
+  //     const vm = this
+  //     setInterval(function () {
+  //       vm.nextSlider()
+  //     }, vm.interval)
+  //   }
+  // },
   props: ['sliderItems', 'interval'],
   components: { AppSliderItem }
 }

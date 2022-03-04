@@ -73,6 +73,7 @@ hr {
 .slider-two__ul {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .slider-two__li {
@@ -106,11 +107,7 @@ hr {
 }
 
 .slider__img{
-    /* height: 100%;
-    width: 100%;
-    object-fit: contain; */
-    width: 100%;
+     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* transition: 0.3s; */
-}
+  }
