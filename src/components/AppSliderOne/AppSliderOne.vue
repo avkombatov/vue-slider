@@ -1,7 +1,7 @@
 <template>
-  <div class="container-one center">
+  <div class="slider-one">
     <div
-      class="slider-one"
+      class="slider-one__line"
       :style="{ 'margin-left': '-' + 100 * offset + '%' }"
     >
       <app-slider-item
@@ -38,19 +38,18 @@ export default {
       } else {
         this.offset++
       }
-
-      // console.log(this.offset)
+   
     }
 
   },
-  // mounted () {
-  //   if (this.interval > 0) {
-  //     const vm = this
-  //     setInterval(function () {
-  //       vm.nextSlider()
-  //     }, vm.interval)
-  //   }
-  // },
+  mounted () {
+    if (this.interval > 0) {
+      const vm = this
+      setInterval(function () {
+        vm.nextSlider()
+      }, vm.interval)
+    }
+  },
   props: ['sliderItems', 'interval'],
   components: { AppSliderItem }
 }

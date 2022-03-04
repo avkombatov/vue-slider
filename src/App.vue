@@ -1,13 +1,14 @@
 <template>
-<div class="container center">
-   <app-slider-three :sliderItems="sliderItems"></app-slider-three>
-</div>
-  <!-- <app-slider-one :sliderItems="sliderItems" :interval="3000"></app-slider-one>
-  <hr />
-  <app-slider-two :sliderItems="sliderItems"></app-slider-two> -->
- 
+  <div class="container center">
+    <app-slider-one
+      :sliderItems="sliderItems"
+      :interval="3000"
+    ></app-slider-one>
+    <hr />
+    <app-slider-three :sliderItems="sliderItems"></app-slider-three>
+  </div>
 
-  
+ 
 </template>
 
 <script>
